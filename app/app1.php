@@ -1,16 +1,16 @@
 <?php
 
-    require_once __DIR__."/../wendor/autoload.php";
+    require_once __DIR__."/../vendor/autoload.php";
     require_once __DIR__."/../src/Rectangle.php";
 
-    $app = new Silex/Application();
+    $app = new Silex\Application();
 
-    $app->get("/", function(){
+    $app->get("/", function() {
         return "Home";
 
     });
 
-    $app->("/new_rectangle", function() {
+    $app->get("/new_rectangle", function() {
         return "
         <!DOCTYPE html>
         <html>
